@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Component Tutorial</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class='body-content'>
+    <div class="card card-block">
+      <h4 class="card-title">Special title treatment</h4>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+
+      <section id="star-rating">
+        <h6>Was this helpful?</h6>
+        <span class="starRating">
+        <input id="rating5" type="radio" name="rating" value="5" />
+        <label for="rating5">5</label>
+        <input id="rating4" type="radio" name="rating" value="4" />
+        <label for="rating4">4</label>
+        <input id="rating3" type="radio" name="rating" value="3" />
+        <label for="rating3">3</label>
+        <input id="rating2" type="radio" name="rating" value="2" />
+        <label for="rating2">2</label>
+        <input id="rating1" type="radio" name="rating" value="1" />
+        <label for="rating1">1</label>
+      </span>
+        <p id="infoBlk">Thank you for your feedback</p>
+        <form id="ratingFrm" autocomplete="off" action="" method="get">
+          <div id="rating4On" class="rating-input" style='display:none;'>
+            <h4 for="usercomments">Any further suggestions?</h4>
+            <textarea id="msg4star" name="msg4star" maxlength="800" cols="10"></textarea>
+          </div>
+          <div id="rating1On" class="rating-input" style='display:none;'>
+            <h4 for="usercomments">How to improve?</h4>
+            <textarea id="msgToImprove" name="msgToImprove" maxlength="800" cols="10"></textarea>
+          </div>
+          <a href="#" id="sumbit5StarRating" class="btn btn-primary">Submit</a>
+        </form>
+      </section>
+    </div>
+
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js'></script>
+  <script src='script.js'></script>
+</body>
+
+</html>
